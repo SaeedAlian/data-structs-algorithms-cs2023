@@ -181,6 +181,19 @@ decimal-number-calc.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-number-calc.o.dir/build.make CMakeFiles/decimal-number-calc.o.dir/build
 .PHONY : decimal-number-calc.o/fast
 
+#=============================================================================
+# Target rules for targets named magic-square.o
+
+# Build rule for target.
+magic-square.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 magic-square.o
+.PHONY : magic-square.o
+
+# fast build rule for target.
+magic-square.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/build
+.PHONY : magic-square.o/fast
+
 src/DecimalNumber/DecimalNumber.o: src/DecimalNumber/DecimalNumber.cpp.o
 .PHONY : src/DecimalNumber/DecimalNumber.o
 
@@ -310,6 +323,30 @@ src/evaluate-infix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/evaluate-infix.cpp.s
 .PHONY : src/evaluate-infix.cpp.s
 
+src/main-apps/magic-square.o: src/main-apps/magic-square.cpp.o
+.PHONY : src/main-apps/magic-square.o
+
+# target to build an object file
+src/main-apps/magic-square.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/src/main-apps/magic-square.cpp.o
+.PHONY : src/main-apps/magic-square.cpp.o
+
+src/main-apps/magic-square.i: src/main-apps/magic-square.cpp.i
+.PHONY : src/main-apps/magic-square.i
+
+# target to preprocess a source file
+src/main-apps/magic-square.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/src/main-apps/magic-square.cpp.i
+.PHONY : src/main-apps/magic-square.cpp.i
+
+src/main-apps/magic-square.s: src/main-apps/magic-square.cpp.s
+.PHONY : src/main-apps/magic-square.s
+
+# target to generate assembly for a file
+src/main-apps/magic-square.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/src/main-apps/magic-square.cpp.s
+.PHONY : src/main-apps/magic-square.cpp.s
+
 src/prefix-to-postfix.o: src/prefix-to-postfix.cpp.o
 .PHONY : src/prefix-to-postfix.o
 
@@ -369,6 +406,7 @@ help:
 	@echo "... check-expression-balance.o"
 	@echo "... decimal-number-calc.o"
 	@echo "... evaluate-infix.o"
+	@echo "... magic-square.o"
 	@echo "... prefix-to-postfix.o"
 	@echo "... stack-sequence-validation.o"
 	@echo "... src/DecimalNumber/DecimalNumber.o"
@@ -386,6 +424,9 @@ help:
 	@echo "... src/evaluate-infix.o"
 	@echo "... src/evaluate-infix.i"
 	@echo "... src/evaluate-infix.s"
+	@echo "... src/main-apps/magic-square.o"
+	@echo "... src/main-apps/magic-square.i"
+	@echo "... src/main-apps/magic-square.s"
 	@echo "... src/prefix-to-postfix.o"
 	@echo "... src/prefix-to-postfix.i"
 	@echo "... src/prefix-to-postfix.s"
