@@ -194,6 +194,19 @@ magic-square.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/build
 .PHONY : magic-square.o/fast
 
+#=============================================================================
+# Target rules for targets named calculator.o
+
+# Build rule for target.
+calculator.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculator.o
+.PHONY : calculator.o
+
+# fast build rule for target.
+calculator.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/build
+.PHONY : calculator.o/fast
+
 src/DecimalNumber/DecimalNumber.o: src/DecimalNumber/DecimalNumber.cpp.o
 .PHONY : src/DecimalNumber/DecimalNumber.o
 
@@ -227,6 +240,7 @@ src/Stack/Stack.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/Stack/Stack.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefix-to-postfix.o.dir/build.make CMakeFiles/prefix-to-postfix.o.dir/src/Stack/Stack.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack-sequence-validation.o.dir/build.make CMakeFiles/stack-sequence-validation.o.dir/src/Stack/Stack.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Stack/Stack.cpp.o
 .PHONY : src/Stack/Stack.cpp.o
 
 src/Stack/Stack.i: src/Stack/Stack.cpp.i
@@ -238,6 +252,7 @@ src/Stack/Stack.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/Stack/Stack.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefix-to-postfix.o.dir/build.make CMakeFiles/prefix-to-postfix.o.dir/src/Stack/Stack.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack-sequence-validation.o.dir/build.make CMakeFiles/stack-sequence-validation.o.dir/src/Stack/Stack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Stack/Stack.cpp.i
 .PHONY : src/Stack/Stack.cpp.i
 
 src/Stack/Stack.s: src/Stack/Stack.cpp.s
@@ -249,6 +264,7 @@ src/Stack/Stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/Stack/Stack.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefix-to-postfix.o.dir/build.make CMakeFiles/prefix-to-postfix.o.dir/src/Stack/Stack.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack-sequence-validation.o.dir/build.make CMakeFiles/stack-sequence-validation.o.dir/src/Stack/Stack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Stack/Stack.cpp.s
 .PHONY : src/Stack/Stack.cpp.s
 
 src/check-expression-balance.o: src/check-expression-balance.cpp.o
@@ -322,6 +338,30 @@ src/evaluate-infix.s: src/evaluate-infix.cpp.s
 src/evaluate-infix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/evaluate-infix.cpp.s
 .PHONY : src/evaluate-infix.cpp.s
+
+src/main-apps/calculator.o: src/main-apps/calculator.cpp.o
+.PHONY : src/main-apps/calculator.o
+
+# target to build an object file
+src/main-apps/calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/main-apps/calculator.cpp.o
+.PHONY : src/main-apps/calculator.cpp.o
+
+src/main-apps/calculator.i: src/main-apps/calculator.cpp.i
+.PHONY : src/main-apps/calculator.i
+
+# target to preprocess a source file
+src/main-apps/calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/main-apps/calculator.cpp.i
+.PHONY : src/main-apps/calculator.cpp.i
+
+src/main-apps/calculator.s: src/main-apps/calculator.cpp.s
+.PHONY : src/main-apps/calculator.s
+
+# target to generate assembly for a file
+src/main-apps/calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/main-apps/calculator.cpp.s
+.PHONY : src/main-apps/calculator.cpp.s
 
 src/main-apps/magic-square.o: src/main-apps/magic-square.cpp.o
 .PHONY : src/main-apps/magic-square.o
@@ -403,6 +443,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... calculator.o"
 	@echo "... check-expression-balance.o"
 	@echo "... decimal-number-calc.o"
 	@echo "... evaluate-infix.o"
@@ -424,6 +465,9 @@ help:
 	@echo "... src/evaluate-infix.o"
 	@echo "... src/evaluate-infix.i"
 	@echo "... src/evaluate-infix.s"
+	@echo "... src/main-apps/calculator.o"
+	@echo "... src/main-apps/calculator.i"
+	@echo "... src/main-apps/calculator.s"
 	@echo "... src/main-apps/magic-square.o"
 	@echo "... src/main-apps/magic-square.i"
 	@echo "... src/main-apps/magic-square.s"

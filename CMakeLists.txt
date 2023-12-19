@@ -17,6 +17,7 @@ set(Stack_sequence_validation_SOURCES src/stack-sequence-validation.cpp)
 set(Decimal_number_calc_SOURCES src/decimal-number-calc.cpp)
 
 set(Magic_square_SOURCES src/main-apps/magic-square.cpp)
+set(Calculator_SOURCES src/main-apps/calculator.cpp)
 
 # Create the executable targets
 add_executable(check-expression-balance.o ${Check_expression_balance_SOURCES} ${Stack_SOURCES})
@@ -26,5 +27,6 @@ add_executable(stack-sequence-validation.o ${Stack_sequence_validation_SOURCES} 
 add_executable(decimal-number-calc.o ${Decimal_number_calc_SOURCES} ${DecimalNumber_SOURCES})
 
 add_executable(magic-square.o ${Magic_square_SOURCES})
+add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES})
 
 
