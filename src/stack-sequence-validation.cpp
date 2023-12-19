@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool stack_sequence_validation(int* pushed, int* popped, int length);
+bool stack_sequence_validation(int *pushed, int *popped, int length);
 
 int main() {
   int pushed[] = {1, 3, 4, 5, 7};
@@ -17,8 +17,8 @@ int main() {
   return 0;
 }
 
-bool stack_sequence_validation(int* pushed, int* popped, int length) {
-  Stack stack = Stack(length);
+bool stack_sequence_validation(int *pushed, int *popped, int length) {
+  Stack<int> stack;
 
   int j = 0;
 

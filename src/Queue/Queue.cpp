@@ -2,26 +2,31 @@
 
 #include <iostream>
 
-Queue::Queue(int size) {
+#define DEFAULT_MAX_SIZE 1024 * 2
+
+template <class T> Queue<T>::Queue() {
+  front = -1;
+  rear = -1;
+  max_size = DEFAULT_MAX_SIZE;
+  items = new T[DEFAULT_MAX_SIZE];
+}
+
+template <class T> Queue<T>::Queue(int size) {
   front = -1;
   rear = -1;
   max_size = size;
-  items = new int[size];
+  items = new T[size];
 }
 
-bool Queue::is_empty() {
-  return front == -1;
-}
+template <class T> bool Queue<T>::is_empty() { return front == -1; }
 
-bool Queue::is_full() {
+template <class T> bool Queue<T>::is_full() {
   return (rear + 1) % max_size == front;
 }
 
-int Queue::get_front() {
-  return items[front];
-}
+template <class T> T Queue<T>::get_front() { return items[front]; }
 
-void Queue::enqueue(int item) {
+template <class T> void Queue<T>::enqueue(T item) {
   if (is_full()) {
     std::cout << "Queue is full!" << std::endl;
     std::cout << "Cannot add " << item << " into queue." << std::endl;
@@ -37,7 +42,7 @@ void Queue::enqueue(int item) {
   items[rear] = item;
 }
 
-void Queue::dequeue() {
+template <class T> void Queue<T>::dequeue() {
   if (is_empty()) {
     std::cout << "Queue is empty!" << std::endl;
     std::cout << "Cannot remove item from queue." << std::endl;
@@ -51,7 +56,7 @@ void Queue::dequeue() {
   }
 }
 
-void Queue::dequeue(int& item) {
+template <class T> void Queue<T>::dequeue(T &item) {
   if (is_empty()) {
     std::cout << "Queue is empty!" << std::endl;
     std::cout << "Cannot remove item from queue." << std::endl;
@@ -69,11 +74,11 @@ void Queue::dequeue(int& item) {
   item = items[temp_front];
 }
 
-int Queue::dequeue_and_return() {
+template <class T> T Queue<T>::dequeue_and_return() {
   if (is_empty()) {
     std::cout << "Queue is empty!" << std::endl;
     std::cout << "Cannot remove item from queue." << std::endl;
-    return -1;
+    return (T)0;
   }
 
   int temp_front = front;
@@ -87,7 +92,7 @@ int Queue::dequeue_and_return() {
   return items[temp_front];
 }
 
-void Queue::print() {
+template <class T> void Queue<T>::print() {
   int temp_front = front;
 
   if (is_empty()) {
@@ -104,6 +109,10 @@ void Queue::print() {
   std::cout << std::endl;
 }
 
-Queue::~Queue() {
-  delete[] items;
-}
+template <class T> Queue<T>::~Queue() { delete[] items; }
+
+template class Queue<char>;
+template class Queue<int>;
+template class Queue<std::string>;
+template class Queue<float>;
+template class Queue<double>;

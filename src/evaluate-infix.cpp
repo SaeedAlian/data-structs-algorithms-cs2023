@@ -9,16 +9,16 @@
 using namespace std;
 
 int precedence(char op);
-char* infix_to_postfix(char* infix);
-int eval_postfix(char* postfix);
+char *infix_to_postfix(char *infix);
+int eval_postfix(char *postfix);
 
 int main() {
   cout << "Enter operation : ";
-  char* infix;
+  char *infix;
 
   cin >> infix;
 
-  char* postfix = infix_to_postfix(infix);
+  char *postfix = infix_to_postfix(infix);
 
   cout << "The postfix is : ";
   cout << postfix << endl;
@@ -34,25 +34,25 @@ int main() {
 
 int precedence(char op) {
   switch (op) {
-    case '+':
-    case '-':
-      return 1;
+  case '+':
+  case '-':
+    return 1;
 
-    case '*':
-    case '/':
-      return 2;
+  case '*':
+  case '/':
+    return 2;
 
-    default:
-      return 0;
+  default:
+    return 0;
   }
 }
 
-char* infix_to_postfix(char* infix) {
+char *infix_to_postfix(char *infix) {
   int length = strlen(infix);
 
-  Stack operators = Stack(length);
+  Stack<char> operators;
 
-  char* postfix = new char[length * 2];
+  char *postfix = new char[length * 2];
   int j = 0;
 
   for (int i = 0; infix[i] != '\0'; i++) {
@@ -64,45 +64,47 @@ char* infix_to_postfix(char* infix) {
     }
 
     switch (symbol) {
-      case '(': {
-        operators.push((int)symbol);
+    case '(': {
+      operators.push(symbol);
 
-        break;
-      }
+      break;
+    }
 
-      case ')': {
-        int last_operator;
+    case ')': {
+      int last_operator;
 
+      postfix[j++] = SPECIAL_CHARACTER;
+
+      while (!operators.is_empty() &&
+             (last_operator = operators.pop_and_return()) != '(') {
+        postfix[j++] = last_operator;
         postfix[j++] = SPECIAL_CHARACTER;
-
-        while (!operators.is_empty() && (last_operator = operators.pop_and_return()) != '(') {
-          postfix[j++] = (char)last_operator;
-          postfix[j++] = SPECIAL_CHARACTER;
-        }
-
-        break;
       }
 
-      case '+':
-      case '-':
-      case '*':
-      case '/': {
-        char top_operator = (char)operators.get_top();
+      break;
+    }
 
-        if (infix[i - 1] != ')') {
-          postfix[j++] = SPECIAL_CHARACTER;
-        }
+    case '+':
+    case '-':
+    case '*':
+    case '/': {
+      char top_operator = operators.get_top();
 
-        while (!operators.is_empty() && precedence(top_operator) >= precedence(symbol)) {
-          postfix[j++] = (char)operators.pop_and_return();
-          postfix[j++] = SPECIAL_CHARACTER;
-          top_operator = (char)operators.get_top();
-        }
-
-        operators.push((int)symbol);
-
-        break;
+      if (infix[i - 1] != ')') {
+        postfix[j++] = SPECIAL_CHARACTER;
       }
+
+      while (!operators.is_empty() &&
+             precedence(top_operator) >= precedence(symbol)) {
+        postfix[j++] = operators.pop_and_return();
+        postfix[j++] = SPECIAL_CHARACTER;
+        top_operator = operators.get_top();
+      }
+
+      operators.push(symbol);
+
+      break;
+    }
     }
   }
 
@@ -111,7 +113,7 @@ char* infix_to_postfix(char* infix) {
   }
 
   while (!operators.is_empty()) {
-    postfix[j++] = (char)operators.pop_and_return();
+    postfix[j++] = operators.pop_and_return();
     postfix[j++] = SPECIAL_CHARACTER;
   }
 
@@ -120,12 +122,13 @@ char* infix_to_postfix(char* infix) {
   return postfix;
 }
 
-int eval_postfix(char* postfix) {
+int eval_postfix(char *postfix) {
   int length = strlen(postfix);
 
-  Stack operands = Stack(length);
+  Stack<int> operands;
 
-  if (length == 0) return 0;
+  if (length == 0)
+    return 0;
 
   int tempOperand = 0;
 
@@ -138,7 +141,8 @@ int eval_postfix(char* postfix) {
       continue;
     }
 
-    if (postfix[i - 1] >= '0' && postfix[i - 1] <= '9' && character == SPECIAL_CHARACTER) {
+    if (postfix[i - 1] >= '0' && postfix[i - 1] <= '9' &&
+        character == SPECIAL_CHARACTER) {
       operands.push(tempOperand);
       tempOperand = 0;
 
@@ -146,48 +150,48 @@ int eval_postfix(char* postfix) {
     }
 
     switch (character) {
-      case '+': {
-        int a, b;
-        operands.pop(a);
-        operands.pop(b);
+    case '+': {
+      int a, b;
+      operands.pop(a);
+      operands.pop(b);
 
-        operands.push(b + a);
+      operands.push(b + a);
 
-        break;
-      }
+      break;
+    }
 
-      case '-': {
-        int a, b;
-        operands.pop(a);
-        operands.pop(b);
+    case '-': {
+      int a, b;
+      operands.pop(a);
+      operands.pop(b);
 
-        operands.push(b - a);
+      operands.push(b - a);
 
-        break;
-      }
+      break;
+    }
 
-      case '*': {
-        int a, b;
-        operands.pop(a);
-        operands.pop(b);
+    case '*': {
+      int a, b;
+      operands.pop(a);
+      operands.pop(b);
 
-        operands.push(b * a);
+      operands.push(b * a);
 
-        break;
-      }
+      break;
+    }
 
-      case '/': {
-        int a, b;
-        operands.pop(a);
-        operands.pop(b);
+    case '/': {
+      int a, b;
+      operands.pop(a);
+      operands.pop(b);
 
-        operands.push(b / a);
+      operands.push(b / a);
 
-        break;
-      }
+      break;
+    }
 
-      default:
-        continue;
+    default:
+      continue;
     }
   }
 

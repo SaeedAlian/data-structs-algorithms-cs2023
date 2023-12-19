@@ -1,18 +1,19 @@
-class Stack {
- private:
+template <class T> class Stack {
+private:
   int top;
   int max_size;
-  int* items;
+  T *items;
 
- public:
+public:
+  Stack();
   Stack(int size);
   bool is_empty();
   bool is_full();
-  int get_top();
-  void push(int item);
+  T get_top();
+  void push(T item);
   void pop();
-  void pop(int& item);
-  int pop_and_return();
+  void pop(T &item);
+  T pop_and_return();
   void print();
   void reverse();
   ~Stack();

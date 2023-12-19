@@ -1,21 +1,22 @@
 #pragma once
 
-class Queue {
- private:
+template <class T> class Queue {
+private:
   int front;
   int rear;
   int max_size;
-  int* items;
+  T *items;
 
- public:
+public:
+  Queue();
   Queue(int size);
   bool is_empty();
   bool is_full();
-  int get_front();
-  void enqueue(int item);
+  T get_front();
+  void enqueue(T item);
   void dequeue();
-  void dequeue(int& item);
-  int dequeue_and_return();
+  void dequeue(T &item);
+  T dequeue_and_return();
   void print();
   ~Queue();
 };

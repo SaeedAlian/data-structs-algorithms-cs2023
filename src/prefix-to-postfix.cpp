@@ -6,14 +6,14 @@
 
 using namespace std;
 
-char* prefix_to_postfix(char* prefix);
+char *prefix_to_postfix(char *prefix);
 
 int main() {
   cout << "Enter prefix : ";
-  char* prefix;
+  char *prefix;
   cin >> prefix;
 
-  char* postfix = prefix_to_postfix(prefix);
+  char *postfix = prefix_to_postfix(prefix);
 
   cout << "The postfix is : " << postfix;
 
@@ -22,14 +22,14 @@ int main() {
   return 0;
 }
 
-char* prefix_to_postfix(char* prefix) {
+char *prefix_to_postfix(char *prefix) {
   int length = strlen(prefix);
 
-  Stack operators = Stack(length);
+  Stack<char> operators;
 
   int operand_count = 0;
 
-  char* postfix = new char[length];
+  char *postfix = new char[length];
   int j = 0;
 
   for (int i = 0; prefix[i] != '\0'; i++) {
@@ -37,7 +37,7 @@ char* prefix_to_postfix(char* prefix) {
 
     if (operand_count >= 2 && !operators.is_empty()) {
       operand_count = 0;
-      postfix[j++] = (char)operators.pop_and_return();
+      postfix[j++] = operators.pop_and_return();
     }
 
     if (symbol >= '0' && symbol <= '9') {
@@ -48,13 +48,13 @@ char* prefix_to_postfix(char* prefix) {
 
     if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {
       operand_count = 0;
-      operators.push((int)symbol);
+      operators.push(symbol);
       continue;
     }
   }
 
   while (!operators.is_empty()) {
-    postfix[j++] = (char)operators.pop_and_return();
+    postfix[j++] = operators.pop_and_return();
   }
 
   postfix[j] = '\0';
