@@ -1,5 +1,18 @@
 #pragma once
 
+#include <ostream>
+
+struct TreeNode {
+  int key;
+  TreeNode *right_child;
+  TreeNode *left_child;
+
+  friend std::ostream &operator<<(std::ostream &os, const TreeNode &node) {
+    os << node.key;
+    return os;
+  }
+};
+
 template <class T> class Queue {
 private:
   int front;
@@ -16,7 +29,6 @@ public:
   void enqueue(T item);
   void dequeue();
   void dequeue(T &item);
-  T dequeue_and_return();
   void print();
   ~Queue();
 };

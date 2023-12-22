@@ -182,6 +182,19 @@ decimal-number-calc.o/fast:
 .PHONY : decimal-number-calc.o/fast
 
 #=============================================================================
+# Target rules for targets named binary-tree-test.o
+
+# Build rule for target.
+binary-tree-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary-tree-test.o
+.PHONY : binary-tree-test.o
+
+# fast build rule for target.
+binary-tree-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/build
+.PHONY : binary-tree-test.o/fast
+
+#=============================================================================
 # Target rules for targets named magic-square.o
 
 # Build rule for target.
@@ -207,6 +220,30 @@ calculator.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/build
 .PHONY : calculator.o/fast
 
+src/BinaryTree/BinaryTree.o: src/BinaryTree/BinaryTree.cpp.o
+.PHONY : src/BinaryTree/BinaryTree.o
+
+# target to build an object file
+src/BinaryTree/BinaryTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/BinaryTree/BinaryTree.cpp.o
+.PHONY : src/BinaryTree/BinaryTree.cpp.o
+
+src/BinaryTree/BinaryTree.i: src/BinaryTree/BinaryTree.cpp.i
+.PHONY : src/BinaryTree/BinaryTree.i
+
+# target to preprocess a source file
+src/BinaryTree/BinaryTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/BinaryTree/BinaryTree.cpp.i
+.PHONY : src/BinaryTree/BinaryTree.cpp.i
+
+src/BinaryTree/BinaryTree.s: src/BinaryTree/BinaryTree.cpp.s
+.PHONY : src/BinaryTree/BinaryTree.s
+
+# target to generate assembly for a file
+src/BinaryTree/BinaryTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/BinaryTree/BinaryTree.cpp.s
+.PHONY : src/BinaryTree/BinaryTree.cpp.s
+
 src/DecimalNumber/DecimalNumber.o: src/DecimalNumber/DecimalNumber.cpp.o
 .PHONY : src/DecimalNumber/DecimalNumber.o
 
@@ -230,6 +267,30 @@ src/DecimalNumber/DecimalNumber.s: src/DecimalNumber/DecimalNumber.cpp.s
 src/DecimalNumber/DecimalNumber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-number-calc.o.dir/build.make CMakeFiles/decimal-number-calc.o.dir/src/DecimalNumber/DecimalNumber.cpp.s
 .PHONY : src/DecimalNumber/DecimalNumber.cpp.s
+
+src/Queue/Queue.o: src/Queue/Queue.cpp.o
+.PHONY : src/Queue/Queue.o
+
+# target to build an object file
+src/Queue/Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.o
+.PHONY : src/Queue/Queue.cpp.o
+
+src/Queue/Queue.i: src/Queue/Queue.cpp.i
+.PHONY : src/Queue/Queue.i
+
+# target to preprocess a source file
+src/Queue/Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.i
+.PHONY : src/Queue/Queue.cpp.i
+
+src/Queue/Queue.s: src/Queue/Queue.cpp.s
+.PHONY : src/Queue/Queue.s
+
+# target to generate assembly for a file
+src/Queue/Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.s
+.PHONY : src/Queue/Queue.cpp.s
 
 src/Stack/Stack.o: src/Stack/Stack.cpp.o
 .PHONY : src/Stack/Stack.o
@@ -266,6 +327,30 @@ src/Stack/Stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack-sequence-validation.o.dir/build.make CMakeFiles/stack-sequence-validation.o.dir/src/Stack/Stack.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Stack/Stack.cpp.s
 .PHONY : src/Stack/Stack.cpp.s
+
+src/binary-tree-test.o: src/binary-tree-test.cpp.o
+.PHONY : src/binary-tree-test.o
+
+# target to build an object file
+src/binary-tree-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/binary-tree-test.cpp.o
+.PHONY : src/binary-tree-test.cpp.o
+
+src/binary-tree-test.i: src/binary-tree-test.cpp.i
+.PHONY : src/binary-tree-test.i
+
+# target to preprocess a source file
+src/binary-tree-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/binary-tree-test.cpp.i
+.PHONY : src/binary-tree-test.cpp.i
+
+src/binary-tree-test.s: src/binary-tree-test.cpp.s
+.PHONY : src/binary-tree-test.s
+
+# target to generate assembly for a file
+src/binary-tree-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/binary-tree-test.cpp.s
+.PHONY : src/binary-tree-test.cpp.s
 
 src/check-expression-balance.o: src/check-expression-balance.cpp.o
 .PHONY : src/check-expression-balance.o
@@ -443,6 +528,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... binary-tree-test.o"
 	@echo "... calculator.o"
 	@echo "... check-expression-balance.o"
 	@echo "... decimal-number-calc.o"
@@ -450,12 +536,21 @@ help:
 	@echo "... magic-square.o"
 	@echo "... prefix-to-postfix.o"
 	@echo "... stack-sequence-validation.o"
+	@echo "... src/BinaryTree/BinaryTree.o"
+	@echo "... src/BinaryTree/BinaryTree.i"
+	@echo "... src/BinaryTree/BinaryTree.s"
 	@echo "... src/DecimalNumber/DecimalNumber.o"
 	@echo "... src/DecimalNumber/DecimalNumber.i"
 	@echo "... src/DecimalNumber/DecimalNumber.s"
+	@echo "... src/Queue/Queue.o"
+	@echo "... src/Queue/Queue.i"
+	@echo "... src/Queue/Queue.s"
 	@echo "... src/Stack/Stack.o"
 	@echo "... src/Stack/Stack.i"
 	@echo "... src/Stack/Stack.s"
+	@echo "... src/binary-tree-test.o"
+	@echo "... src/binary-tree-test.i"
+	@echo "... src/binary-tree-test.s"
 	@echo "... src/check-expression-balance.o"
 	@echo "... src/check-expression-balance.i"
 	@echo "... src/check-expression-balance.s"

@@ -74,24 +74,6 @@ template <class T> void Queue<T>::dequeue(T &item) {
   item = items[temp_front];
 }
 
-template <class T> T Queue<T>::dequeue_and_return() {
-  if (is_empty()) {
-    std::cout << "Queue is empty!" << std::endl;
-    std::cout << "Cannot remove item from queue." << std::endl;
-    return (T)0;
-  }
-
-  int temp_front = front;
-
-  if (front == rear) {
-    front = rear = -1;
-  } else {
-    front = (front + 1) % max_size;
-  }
-
-  return items[temp_front];
-}
-
 template <class T> void Queue<T>::print() {
   int temp_front = front;
 
@@ -116,3 +98,5 @@ template class Queue<int>;
 template class Queue<std::string>;
 template class Queue<float>;
 template class Queue<double>;
+template class Queue<TreeNode>;
+template class Queue<TreeNode *>;
