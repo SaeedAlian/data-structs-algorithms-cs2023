@@ -4,10 +4,6 @@
 
 BinaryTree::BinaryTree() { root = NULL; }
 
-/*
- * Creates a node and adds it to the tree.
- * Returns 1 if it was successful, otherwise returns 0
- */
 int BinaryTree::add(int key) {
   TreeNode *new_node = new TreeNode;
   new_node->key = key;
@@ -82,10 +78,6 @@ void BinaryTree::remove_deepest_node(TreeNode *node) {
   }
 }
 
-/*
- * Removes a node from the tree.
- * Returns 1 if it was successful, otherwise returns 0
- */
 int BinaryTree::remove(int key) {
   if (root == NULL) {
     return 0;
@@ -132,9 +124,6 @@ int BinaryTree::remove(int key) {
   return 0;
 }
 
-/*
- * Traverse the tree in level order
- */
 void BinaryTree::traverse() {
   if (root == NULL) {
     std::cout << "Tree is empty" << std::endl;
