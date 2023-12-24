@@ -10,6 +10,7 @@ set(DecimalNumber_SOURCES src/DecimalNumber/DecimalNumber.cpp)
 set(Stack_SOURCES src/Stack/Stack.cpp)
 set(Queue_SOURCES src/Queue/Queue.cpp)
 set(Binary_tree_SOURCES src/BinaryTree/BinaryTree.cpp)
+set(AVL_tree_SOURCES src/AVLTree/AVLTree.cpp)
 
 set(Check_expression_balance_SOURCES src/check-expression-balance.cpp)
 set(Evaluate_infix_SOURCES src/evaluate-infix.cpp)
@@ -20,6 +21,7 @@ set(Binary_tree_test_SOURCES src/binary-tree-test.cpp)
 
 set(Magic_square_SOURCES src/main-apps/magic-square.cpp)
 set(Calculator_SOURCES src/main-apps/calculator.cpp)
+set(AVL_tree_test_SOURCES src/main-apps/avl-tree-test.cpp)
 
 # Create the executable targets
 add_executable(check-expression-balance.o ${Check_expression_balance_SOURCES} ${Stack_SOURCES})
@@ -31,5 +33,4 @@ add_executable(binary-tree-test.o ${Binary_tree_test_SOURCES} ${Binary_tree_SOUR
 
 add_executable(magic-square.o ${Magic_square_SOURCES})
 add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES})
-
-
+add_executable(avl-tree-test.o ${AVL_tree_test_SOURCES} ${AVL_tree_SOURCES} ${Queue_SOURCES})

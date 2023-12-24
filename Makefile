@@ -220,6 +220,43 @@ calculator.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/build
 .PHONY : calculator.o/fast
 
+#=============================================================================
+# Target rules for targets named avl-tree-test.o
+
+# Build rule for target.
+avl-tree-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 avl-tree-test.o
+.PHONY : avl-tree-test.o
+
+# fast build rule for target.
+avl-tree-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/build
+.PHONY : avl-tree-test.o/fast
+
+src/AVLTree/AVLTree.o: src/AVLTree/AVLTree.cpp.o
+.PHONY : src/AVLTree/AVLTree.o
+
+# target to build an object file
+src/AVLTree/AVLTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/AVLTree/AVLTree.cpp.o
+.PHONY : src/AVLTree/AVLTree.cpp.o
+
+src/AVLTree/AVLTree.i: src/AVLTree/AVLTree.cpp.i
+.PHONY : src/AVLTree/AVLTree.i
+
+# target to preprocess a source file
+src/AVLTree/AVLTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/AVLTree/AVLTree.cpp.i
+.PHONY : src/AVLTree/AVLTree.cpp.i
+
+src/AVLTree/AVLTree.s: src/AVLTree/AVLTree.cpp.s
+.PHONY : src/AVLTree/AVLTree.s
+
+# target to generate assembly for a file
+src/AVLTree/AVLTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/AVLTree/AVLTree.cpp.s
+.PHONY : src/AVLTree/AVLTree.cpp.s
+
 src/BinaryTree/BinaryTree.o: src/BinaryTree/BinaryTree.cpp.o
 .PHONY : src/BinaryTree/BinaryTree.o
 
@@ -274,6 +311,7 @@ src/Queue/Queue.o: src/Queue/Queue.cpp.o
 # target to build an object file
 src/Queue/Queue.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.o
 .PHONY : src/Queue/Queue.cpp.o
 
 src/Queue/Queue.i: src/Queue/Queue.cpp.i
@@ -282,6 +320,7 @@ src/Queue/Queue.i: src/Queue/Queue.cpp.i
 # target to preprocess a source file
 src/Queue/Queue.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.i
 .PHONY : src/Queue/Queue.cpp.i
 
 src/Queue/Queue.s: src/Queue/Queue.cpp.s
@@ -290,6 +329,7 @@ src/Queue/Queue.s: src/Queue/Queue.cpp.s
 # target to generate assembly for a file
 src/Queue/Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.s
 .PHONY : src/Queue/Queue.cpp.s
 
 src/Stack/Stack.o: src/Stack/Stack.cpp.o
@@ -424,6 +464,30 @@ src/evaluate-infix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/evaluate-infix.cpp.s
 .PHONY : src/evaluate-infix.cpp.s
 
+src/main-apps/avl-tree-test.o: src/main-apps/avl-tree-test.cpp.o
+.PHONY : src/main-apps/avl-tree-test.o
+
+# target to build an object file
+src/main-apps/avl-tree-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/main-apps/avl-tree-test.cpp.o
+.PHONY : src/main-apps/avl-tree-test.cpp.o
+
+src/main-apps/avl-tree-test.i: src/main-apps/avl-tree-test.cpp.i
+.PHONY : src/main-apps/avl-tree-test.i
+
+# target to preprocess a source file
+src/main-apps/avl-tree-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/main-apps/avl-tree-test.cpp.i
+.PHONY : src/main-apps/avl-tree-test.cpp.i
+
+src/main-apps/avl-tree-test.s: src/main-apps/avl-tree-test.cpp.s
+.PHONY : src/main-apps/avl-tree-test.s
+
+# target to generate assembly for a file
+src/main-apps/avl-tree-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/main-apps/avl-tree-test.cpp.s
+.PHONY : src/main-apps/avl-tree-test.cpp.s
+
 src/main-apps/calculator.o: src/main-apps/calculator.cpp.o
 .PHONY : src/main-apps/calculator.o
 
@@ -528,6 +592,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... avl-tree-test.o"
 	@echo "... binary-tree-test.o"
 	@echo "... calculator.o"
 	@echo "... check-expression-balance.o"
@@ -536,6 +601,9 @@ help:
 	@echo "... magic-square.o"
 	@echo "... prefix-to-postfix.o"
 	@echo "... stack-sequence-validation.o"
+	@echo "... src/AVLTree/AVLTree.o"
+	@echo "... src/AVLTree/AVLTree.i"
+	@echo "... src/AVLTree/AVLTree.s"
 	@echo "... src/BinaryTree/BinaryTree.o"
 	@echo "... src/BinaryTree/BinaryTree.i"
 	@echo "... src/BinaryTree/BinaryTree.s"
@@ -560,6 +628,9 @@ help:
 	@echo "... src/evaluate-infix.o"
 	@echo "... src/evaluate-infix.i"
 	@echo "... src/evaluate-infix.s"
+	@echo "... src/main-apps/avl-tree-test.o"
+	@echo "... src/main-apps/avl-tree-test.i"
+	@echo "... src/main-apps/avl-tree-test.s"
 	@echo "... src/main-apps/calculator.o"
 	@echo "... src/main-apps/calculator.i"
 	@echo "... src/main-apps/calculator.s"

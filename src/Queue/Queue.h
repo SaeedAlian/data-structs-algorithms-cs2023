@@ -13,6 +13,18 @@ struct TreeNode {
   }
 };
 
+struct AVLTreeNode {
+  int key;
+  AVLTreeNode *right_child;
+  AVLTreeNode *left_child;
+  int height;
+
+  friend std::ostream &operator<<(std::ostream &os, const AVLTreeNode &node) {
+    os << node.key;
+    return os;
+  }
+};
+
 template <class T> class Queue {
 private:
   int front;

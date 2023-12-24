@@ -100,3 +100,5 @@ template class Queue<float>;
 template class Queue<double>;
 template class Queue<TreeNode>;
 template class Queue<TreeNode *>;
+template class Queue<AVLTreeNode>;
+template class Queue<AVLTreeNode *>;
