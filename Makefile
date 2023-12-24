@@ -233,6 +233,19 @@ avl-tree-test.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/build
 .PHONY : avl-tree-test.o/fast
 
+#=============================================================================
+# Target rules for targets named strassen-matrix-mult.o
+
+# Build rule for target.
+strassen-matrix-mult.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 strassen-matrix-mult.o
+.PHONY : strassen-matrix-mult.o
+
+# fast build rule for target.
+strassen-matrix-mult.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/build
+.PHONY : strassen-matrix-mult.o/fast
+
 src/AVLTree/AVLTree.o: src/AVLTree/AVLTree.cpp.o
 .PHONY : src/AVLTree/AVLTree.o
 
@@ -536,6 +549,30 @@ src/main-apps/magic-square.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magic-square.o.dir/build.make CMakeFiles/magic-square.o.dir/src/main-apps/magic-square.cpp.s
 .PHONY : src/main-apps/magic-square.cpp.s
 
+src/main-apps/strassen-matrix-mult.o: src/main-apps/strassen-matrix-mult.cpp.o
+.PHONY : src/main-apps/strassen-matrix-mult.o
+
+# target to build an object file
+src/main-apps/strassen-matrix-mult.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/src/main-apps/strassen-matrix-mult.cpp.o
+.PHONY : src/main-apps/strassen-matrix-mult.cpp.o
+
+src/main-apps/strassen-matrix-mult.i: src/main-apps/strassen-matrix-mult.cpp.i
+.PHONY : src/main-apps/strassen-matrix-mult.i
+
+# target to preprocess a source file
+src/main-apps/strassen-matrix-mult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/src/main-apps/strassen-matrix-mult.cpp.i
+.PHONY : src/main-apps/strassen-matrix-mult.cpp.i
+
+src/main-apps/strassen-matrix-mult.s: src/main-apps/strassen-matrix-mult.cpp.s
+.PHONY : src/main-apps/strassen-matrix-mult.s
+
+# target to generate assembly for a file
+src/main-apps/strassen-matrix-mult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/src/main-apps/strassen-matrix-mult.cpp.s
+.PHONY : src/main-apps/strassen-matrix-mult.cpp.s
+
 src/prefix-to-postfix.o: src/prefix-to-postfix.cpp.o
 .PHONY : src/prefix-to-postfix.o
 
@@ -601,6 +638,7 @@ help:
 	@echo "... magic-square.o"
 	@echo "... prefix-to-postfix.o"
 	@echo "... stack-sequence-validation.o"
+	@echo "... strassen-matrix-mult.o"
 	@echo "... src/AVLTree/AVLTree.o"
 	@echo "... src/AVLTree/AVLTree.i"
 	@echo "... src/AVLTree/AVLTree.s"
@@ -637,6 +675,9 @@ help:
 	@echo "... src/main-apps/magic-square.o"
 	@echo "... src/main-apps/magic-square.i"
 	@echo "... src/main-apps/magic-square.s"
+	@echo "... src/main-apps/strassen-matrix-mult.o"
+	@echo "... src/main-apps/strassen-matrix-mult.i"
+	@echo "... src/main-apps/strassen-matrix-mult.s"
 	@echo "... src/prefix-to-postfix.o"
 	@echo "... src/prefix-to-postfix.i"
 	@echo "... src/prefix-to-postfix.s"

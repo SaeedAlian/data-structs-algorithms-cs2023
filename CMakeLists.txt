@@ -22,6 +22,7 @@ set(Binary_tree_test_SOURCES src/binary-tree-test.cpp)
 set(Magic_square_SOURCES src/main-apps/magic-square.cpp)
 set(Calculator_SOURCES src/main-apps/calculator.cpp)
 set(AVL_tree_test_SOURCES src/main-apps/avl-tree-test.cpp)
+set(Strassen_matrix_mult_SOURCES  src/main-apps/strassen-matrix-mult.cpp)
 
 # Create the executable targets
 add_executable(check-expression-balance.o ${Check_expression_balance_SOURCES} ${Stack_SOURCES})
@@ -34,3 +35,4 @@ add_executable(binary-tree-test.o ${Binary_tree_test_SOURCES} ${Binary_tree_SOUR
 add_executable(magic-square.o ${Magic_square_SOURCES})
 add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES})
 add_executable(avl-tree-test.o ${AVL_tree_test_SOURCES} ${AVL_tree_SOURCES} ${Queue_SOURCES})
+add_executable(strassen-matrix-mult.o ${Strassen_matrix_mult_SOURCES})
