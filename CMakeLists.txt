@@ -18,6 +18,7 @@ set(Prefix_to_postfix_SOURCES src/prefix-to-postfix.cpp)
 set(Stack_sequence_validation_SOURCES src/stack-sequence-validation.cpp)
 set(Decimal_number_calc_SOURCES src/decimal-number-calc.cpp)
 set(Binary_tree_test_SOURCES src/binary-tree-test.cpp)
+set(Kmp_pattern_matching_SOURCES src/kmp_pattern_matching.cpp)
 
 set(Magic_square_SOURCES src/main-apps/magic-square.cpp)
 set(Calculator_SOURCES src/main-apps/calculator.cpp)
@@ -31,6 +32,7 @@ add_executable(prefix-to-postfix.o ${Prefix_to_postfix_SOURCES} ${Stack_SOURCES}
 add_executable(stack-sequence-validation.o ${Stack_sequence_validation_SOURCES} ${Stack_SOURCES})
 add_executable(decimal-number-calc.o ${Decimal_number_calc_SOURCES} ${DecimalNumber_SOURCES})
 add_executable(binary-tree-test.o ${Binary_tree_test_SOURCES} ${Binary_tree_SOURCES} ${Queue_SOURCES})
+add_executable(kmp_pattern_matching.o ${Kmp_pattern_matching_SOURCES})
 
 add_executable(magic-square.o ${Magic_square_SOURCES})
 add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES} ${Queue_SOURCES})

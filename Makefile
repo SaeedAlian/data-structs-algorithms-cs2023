@@ -195,6 +195,19 @@ binary-tree-test.o/fast:
 .PHONY : binary-tree-test.o/fast
 
 #=============================================================================
+# Target rules for targets named kmp_pattern_matching.o
+
+# Build rule for target.
+kmp_pattern_matching.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kmp_pattern_matching.o
+.PHONY : kmp_pattern_matching.o
+
+# fast build rule for target.
+kmp_pattern_matching.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/build
+.PHONY : kmp_pattern_matching.o/fast
+
+#=============================================================================
 # Target rules for targets named magic-square.o
 
 # Build rule for target.
@@ -480,6 +493,30 @@ src/evaluate-infix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/evaluate-infix.cpp.s
 .PHONY : src/evaluate-infix.cpp.s
 
+src/kmp_pattern_matching.o: src/kmp_pattern_matching.cpp.o
+.PHONY : src/kmp_pattern_matching.o
+
+# target to build an object file
+src/kmp_pattern_matching.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.o
+.PHONY : src/kmp_pattern_matching.cpp.o
+
+src/kmp_pattern_matching.i: src/kmp_pattern_matching.cpp.i
+.PHONY : src/kmp_pattern_matching.i
+
+# target to preprocess a source file
+src/kmp_pattern_matching.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.i
+.PHONY : src/kmp_pattern_matching.cpp.i
+
+src/kmp_pattern_matching.s: src/kmp_pattern_matching.cpp.s
+.PHONY : src/kmp_pattern_matching.s
+
+# target to generate assembly for a file
+src/kmp_pattern_matching.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.s
+.PHONY : src/kmp_pattern_matching.cpp.s
+
 src/main-apps/avl-tree-test.o: src/main-apps/avl-tree-test.cpp.o
 .PHONY : src/main-apps/avl-tree-test.o
 
@@ -638,6 +675,7 @@ help:
 	@echo "... check-expression-balance.o"
 	@echo "... decimal-number-calc.o"
 	@echo "... evaluate-infix.o"
+	@echo "... kmp_pattern_matching.o"
 	@echo "... magic-square.o"
 	@echo "... prefix-to-postfix.o"
 	@echo "... stack-sequence-validation.o"
@@ -669,6 +707,9 @@ help:
 	@echo "... src/evaluate-infix.o"
 	@echo "... src/evaluate-infix.i"
 	@echo "... src/evaluate-infix.s"
+	@echo "... src/kmp_pattern_matching.o"
+	@echo "... src/kmp_pattern_matching.i"
+	@echo "... src/kmp_pattern_matching.s"
 	@echo "... src/main-apps/avl-tree-test.o"
 	@echo "... src/main-apps/avl-tree-test.i"
 	@echo "... src/main-apps/avl-tree-test.s"
