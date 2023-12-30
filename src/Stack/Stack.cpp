@@ -90,3 +90,4 @@ template class Stack<int>;
 template class Stack<std::string>;
 template class Stack<float>;
 template class Stack<double>;
+template class Stack<long double>;

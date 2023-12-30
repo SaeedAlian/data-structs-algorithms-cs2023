@@ -33,6 +33,6 @@ add_executable(decimal-number-calc.o ${Decimal_number_calc_SOURCES} ${DecimalNum
 add_executable(binary-tree-test.o ${Binary_tree_test_SOURCES} ${Binary_tree_SOURCES} ${Queue_SOURCES})
 
 add_executable(magic-square.o ${Magic_square_SOURCES})
-add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES})
+add_executable(calculator.o ${Calculator_SOURCES} ${Stack_SOURCES} ${Queue_SOURCES})
 add_executable(avl-tree-test.o ${AVL_tree_test_SOURCES} ${AVL_tree_SOURCES} ${Queue_SOURCES})
 add_executable(strassen-matrix-mult.o ${Strassen_matrix_mult_SOURCES})

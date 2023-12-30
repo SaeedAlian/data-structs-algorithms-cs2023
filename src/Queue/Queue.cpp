@@ -94,6 +94,7 @@ template <class T> void Queue<T>::print() {
 template <class T> Queue<T>::~Queue() { delete[] items; }
 
 template class Queue<char>;
+template class Queue<char *>;
 template class Queue<int>;
 template class Queue<std::string>;
 template class Queue<float>;

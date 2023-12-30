@@ -324,6 +324,7 @@ src/Queue/Queue.o: src/Queue/Queue.cpp.o
 # target to build an object file
 src/Queue/Queue.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Queue/Queue.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.o
 .PHONY : src/Queue/Queue.cpp.o
 
@@ -333,6 +334,7 @@ src/Queue/Queue.i: src/Queue/Queue.cpp.i
 # target to preprocess a source file
 src/Queue/Queue.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Queue/Queue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.i
 .PHONY : src/Queue/Queue.cpp.i
 
@@ -342,6 +344,7 @@ src/Queue/Queue.s: src/Queue/Queue.cpp.s
 # target to generate assembly for a file
 src/Queue/Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/Queue/Queue.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.o.dir/build.make CMakeFiles/calculator.o.dir/src/Queue/Queue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/avl-tree-test.o.dir/build.make CMakeFiles/avl-tree-test.o.dir/src/Queue/Queue.cpp.s
 .PHONY : src/Queue/Queue.cpp.s
 
