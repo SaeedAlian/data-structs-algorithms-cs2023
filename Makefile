@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cosmicentropy/Documents/Projects/Main/data-structs-and-algos
+CMAKE_SOURCE_DIR = /home/cosmicentropy/projects/data-structs-and-algos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cosmicentropy/Documents/Projects/Main/data-structs-and-algos
+CMAKE_BINARY_DIR = /home/cosmicentropy/projects/data-structs-and-algos
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cosmicentropy/Documents/Projects/Main/data-structs-and-algos/CMakeFiles /home/cosmicentropy/Documents/Projects/Main/data-structs-and-algos//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cosmicentropy/projects/data-structs-and-algos/CMakeFiles /home/cosmicentropy/projects/data-structs-and-algos//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cosmicentropy/Documents/Projects/Main/data-structs-and-algos/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cosmicentropy/projects/data-structs-and-algos/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -195,17 +195,69 @@ binary-tree-test.o/fast:
 .PHONY : binary-tree-test.o/fast
 
 #=============================================================================
-# Target rules for targets named kmp_pattern_matching.o
+# Target rules for targets named linked-list-test.o
 
 # Build rule for target.
-kmp_pattern_matching.o: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kmp_pattern_matching.o
-.PHONY : kmp_pattern_matching.o
+linked-list-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linked-list-test.o
+.PHONY : linked-list-test.o
 
 # fast build rule for target.
-kmp_pattern_matching.o/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/build
-.PHONY : kmp_pattern_matching.o/fast
+linked-list-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/build
+.PHONY : linked-list-test.o/fast
+
+#=============================================================================
+# Target rules for targets named cd-linked-list-test.o
+
+# Build rule for target.
+cd-linked-list-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cd-linked-list-test.o
+.PHONY : cd-linked-list-test.o
+
+# fast build rule for target.
+cd-linked-list-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/build
+.PHONY : cd-linked-list-test.o/fast
+
+#=============================================================================
+# Target rules for targets named max-heap-test.o
+
+# Build rule for target.
+max-heap-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 max-heap-test.o
+.PHONY : max-heap-test.o
+
+# fast build rule for target.
+max-heap-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/build
+.PHONY : max-heap-test.o/fast
+
+#=============================================================================
+# Target rules for targets named min-heap-test.o
+
+# Build rule for target.
+min-heap-test.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 min-heap-test.o
+.PHONY : min-heap-test.o
+
+# fast build rule for target.
+min-heap-test.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/build
+.PHONY : min-heap-test.o/fast
+
+#=============================================================================
+# Target rules for targets named kmp-pattern-matching.o
+
+# Build rule for target.
+kmp-pattern-matching.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kmp-pattern-matching.o
+.PHONY : kmp-pattern-matching.o
+
+# fast build rule for target.
+kmp-pattern-matching.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp-pattern-matching.o.dir/build.make CMakeFiles/kmp-pattern-matching.o.dir/build
+.PHONY : kmp-pattern-matching.o/fast
 
 #=============================================================================
 # Target rules for targets named magic-square.o
@@ -259,6 +311,97 @@ strassen-matrix-mult.o/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/build
 .PHONY : strassen-matrix-mult.o/fast
 
+#=============================================================================
+# Target rules for targets named binary-search.o
+
+# Build rule for target.
+binary-search.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary-search.o
+.PHONY : binary-search.o
+
+# fast build rule for target.
+binary-search.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-search.o.dir/build.make CMakeFiles/binary-search.o.dir/build
+.PHONY : binary-search.o/fast
+
+#=============================================================================
+# Target rules for targets named recursive-binary-search.o
+
+# Build rule for target.
+recursive-binary-search.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recursive-binary-search.o
+.PHONY : recursive-binary-search.o
+
+# fast build rule for target.
+recursive-binary-search.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive-binary-search.o.dir/build.make CMakeFiles/recursive-binary-search.o.dir/build
+.PHONY : recursive-binary-search.o/fast
+
+#=============================================================================
+# Target rules for targets named linear-search.o
+
+# Build rule for target.
+linear-search.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linear-search.o
+.PHONY : linear-search.o
+
+# fast build rule for target.
+linear-search.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear-search.o.dir/build.make CMakeFiles/linear-search.o.dir/build
+.PHONY : linear-search.o/fast
+
+#=============================================================================
+# Target rules for targets named merge-sort.o
+
+# Build rule for target.
+merge-sort.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 merge-sort.o
+.PHONY : merge-sort.o
+
+# fast build rule for target.
+merge-sort.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/merge-sort.o.dir/build.make CMakeFiles/merge-sort.o.dir/build
+.PHONY : merge-sort.o/fast
+
+#=============================================================================
+# Target rules for targets named bubble-sort.o
+
+# Build rule for target.
+bubble-sort.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bubble-sort.o
+.PHONY : bubble-sort.o
+
+# fast build rule for target.
+bubble-sort.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble-sort.o.dir/build.make CMakeFiles/bubble-sort.o.dir/build
+.PHONY : bubble-sort.o/fast
+
+#=============================================================================
+# Target rules for targets named quick-sort.o
+
+# Build rule for target.
+quick-sort.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quick-sort.o
+.PHONY : quick-sort.o
+
+# fast build rule for target.
+quick-sort.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quick-sort.o.dir/build.make CMakeFiles/quick-sort.o.dir/build
+.PHONY : quick-sort.o/fast
+
+#=============================================================================
+# Target rules for targets named selection-sort.o
+
+# Build rule for target.
+selection-sort.o: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 selection-sort.o
+.PHONY : selection-sort.o
+
+# fast build rule for target.
+selection-sort.o/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selection-sort.o.dir/build.make CMakeFiles/selection-sort.o.dir/build
+.PHONY : selection-sort.o/fast
+
 src/AVLTree/AVLTree.o: src/AVLTree/AVLTree.cpp.o
 .PHONY : src/AVLTree/AVLTree.o
 
@@ -307,6 +450,30 @@ src/BinaryTree/BinaryTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/BinaryTree/BinaryTree.cpp.s
 .PHONY : src/BinaryTree/BinaryTree.cpp.s
 
+src/CDLinkedList/CDLinkedList.o: src/CDLinkedList/CDLinkedList.cpp.o
+.PHONY : src/CDLinkedList/CDLinkedList.o
+
+# target to build an object file
+src/CDLinkedList/CDLinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/CDLinkedList/CDLinkedList.cpp.o
+.PHONY : src/CDLinkedList/CDLinkedList.cpp.o
+
+src/CDLinkedList/CDLinkedList.i: src/CDLinkedList/CDLinkedList.cpp.i
+.PHONY : src/CDLinkedList/CDLinkedList.i
+
+# target to preprocess a source file
+src/CDLinkedList/CDLinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/CDLinkedList/CDLinkedList.cpp.i
+.PHONY : src/CDLinkedList/CDLinkedList.cpp.i
+
+src/CDLinkedList/CDLinkedList.s: src/CDLinkedList/CDLinkedList.cpp.s
+.PHONY : src/CDLinkedList/CDLinkedList.s
+
+# target to generate assembly for a file
+src/CDLinkedList/CDLinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/CDLinkedList/CDLinkedList.cpp.s
+.PHONY : src/CDLinkedList/CDLinkedList.cpp.s
+
 src/DecimalNumber/DecimalNumber.o: src/DecimalNumber/DecimalNumber.cpp.o
 .PHONY : src/DecimalNumber/DecimalNumber.o
 
@@ -330,6 +497,78 @@ src/DecimalNumber/DecimalNumber.s: src/DecimalNumber/DecimalNumber.cpp.s
 src/DecimalNumber/DecimalNumber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-number-calc.o.dir/build.make CMakeFiles/decimal-number-calc.o.dir/src/DecimalNumber/DecimalNumber.cpp.s
 .PHONY : src/DecimalNumber/DecimalNumber.cpp.s
+
+src/Heap/MaxHeap.o: src/Heap/MaxHeap.cpp.o
+.PHONY : src/Heap/MaxHeap.o
+
+# target to build an object file
+src/Heap/MaxHeap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/Heap/MaxHeap.cpp.o
+.PHONY : src/Heap/MaxHeap.cpp.o
+
+src/Heap/MaxHeap.i: src/Heap/MaxHeap.cpp.i
+.PHONY : src/Heap/MaxHeap.i
+
+# target to preprocess a source file
+src/Heap/MaxHeap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/Heap/MaxHeap.cpp.i
+.PHONY : src/Heap/MaxHeap.cpp.i
+
+src/Heap/MaxHeap.s: src/Heap/MaxHeap.cpp.s
+.PHONY : src/Heap/MaxHeap.s
+
+# target to generate assembly for a file
+src/Heap/MaxHeap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/Heap/MaxHeap.cpp.s
+.PHONY : src/Heap/MaxHeap.cpp.s
+
+src/Heap/MinHeap.o: src/Heap/MinHeap.cpp.o
+.PHONY : src/Heap/MinHeap.o
+
+# target to build an object file
+src/Heap/MinHeap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/Heap/MinHeap.cpp.o
+.PHONY : src/Heap/MinHeap.cpp.o
+
+src/Heap/MinHeap.i: src/Heap/MinHeap.cpp.i
+.PHONY : src/Heap/MinHeap.i
+
+# target to preprocess a source file
+src/Heap/MinHeap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/Heap/MinHeap.cpp.i
+.PHONY : src/Heap/MinHeap.cpp.i
+
+src/Heap/MinHeap.s: src/Heap/MinHeap.cpp.s
+.PHONY : src/Heap/MinHeap.s
+
+# target to generate assembly for a file
+src/Heap/MinHeap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/Heap/MinHeap.cpp.s
+.PHONY : src/Heap/MinHeap.cpp.s
+
+src/LinkedList/LinkedList.o: src/LinkedList/LinkedList.cpp.o
+.PHONY : src/LinkedList/LinkedList.o
+
+# target to build an object file
+src/LinkedList/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/LinkedList/LinkedList.cpp.o
+.PHONY : src/LinkedList/LinkedList.cpp.o
+
+src/LinkedList/LinkedList.i: src/LinkedList/LinkedList.cpp.i
+.PHONY : src/LinkedList/LinkedList.i
+
+# target to preprocess a source file
+src/LinkedList/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/LinkedList/LinkedList.cpp.i
+.PHONY : src/LinkedList/LinkedList.cpp.i
+
+src/LinkedList/LinkedList.s: src/LinkedList/LinkedList.cpp.s
+.PHONY : src/LinkedList/LinkedList.s
+
+# target to generate assembly for a file
+src/LinkedList/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/LinkedList/LinkedList.cpp.s
+.PHONY : src/LinkedList/LinkedList.cpp.s
 
 src/Queue/Queue.o: src/Queue/Queue.cpp.o
 .PHONY : src/Queue/Queue.o
@@ -421,6 +660,30 @@ src/binary-tree-test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-tree-test.o.dir/build.make CMakeFiles/binary-tree-test.o.dir/src/binary-tree-test.cpp.s
 .PHONY : src/binary-tree-test.cpp.s
 
+src/cd-linked-list-test.o: src/cd-linked-list-test.cpp.o
+.PHONY : src/cd-linked-list-test.o
+
+# target to build an object file
+src/cd-linked-list-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/cd-linked-list-test.cpp.o
+.PHONY : src/cd-linked-list-test.cpp.o
+
+src/cd-linked-list-test.i: src/cd-linked-list-test.cpp.i
+.PHONY : src/cd-linked-list-test.i
+
+# target to preprocess a source file
+src/cd-linked-list-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/cd-linked-list-test.cpp.i
+.PHONY : src/cd-linked-list-test.cpp.i
+
+src/cd-linked-list-test.s: src/cd-linked-list-test.cpp.s
+.PHONY : src/cd-linked-list-test.s
+
+# target to generate assembly for a file
+src/cd-linked-list-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cd-linked-list-test.o.dir/build.make CMakeFiles/cd-linked-list-test.o.dir/src/cd-linked-list-test.cpp.s
+.PHONY : src/cd-linked-list-test.cpp.s
+
 src/check-expression-balance.o: src/check-expression-balance.cpp.o
 .PHONY : src/check-expression-balance.o
 
@@ -493,29 +756,53 @@ src/evaluate-infix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/evaluate-infix.o.dir/build.make CMakeFiles/evaluate-infix.o.dir/src/evaluate-infix.cpp.s
 .PHONY : src/evaluate-infix.cpp.s
 
-src/kmp_pattern_matching.o: src/kmp_pattern_matching.cpp.o
-.PHONY : src/kmp_pattern_matching.o
+src/kmp-pattern-matching.o: src/kmp-pattern-matching.cpp.o
+.PHONY : src/kmp-pattern-matching.o
 
 # target to build an object file
-src/kmp_pattern_matching.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.o
-.PHONY : src/kmp_pattern_matching.cpp.o
+src/kmp-pattern-matching.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp-pattern-matching.o.dir/build.make CMakeFiles/kmp-pattern-matching.o.dir/src/kmp-pattern-matching.cpp.o
+.PHONY : src/kmp-pattern-matching.cpp.o
 
-src/kmp_pattern_matching.i: src/kmp_pattern_matching.cpp.i
-.PHONY : src/kmp_pattern_matching.i
+src/kmp-pattern-matching.i: src/kmp-pattern-matching.cpp.i
+.PHONY : src/kmp-pattern-matching.i
 
 # target to preprocess a source file
-src/kmp_pattern_matching.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.i
-.PHONY : src/kmp_pattern_matching.cpp.i
+src/kmp-pattern-matching.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp-pattern-matching.o.dir/build.make CMakeFiles/kmp-pattern-matching.o.dir/src/kmp-pattern-matching.cpp.i
+.PHONY : src/kmp-pattern-matching.cpp.i
 
-src/kmp_pattern_matching.s: src/kmp_pattern_matching.cpp.s
-.PHONY : src/kmp_pattern_matching.s
+src/kmp-pattern-matching.s: src/kmp-pattern-matching.cpp.s
+.PHONY : src/kmp-pattern-matching.s
 
 # target to generate assembly for a file
-src/kmp_pattern_matching.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp_pattern_matching.o.dir/build.make CMakeFiles/kmp_pattern_matching.o.dir/src/kmp_pattern_matching.cpp.s
-.PHONY : src/kmp_pattern_matching.cpp.s
+src/kmp-pattern-matching.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp-pattern-matching.o.dir/build.make CMakeFiles/kmp-pattern-matching.o.dir/src/kmp-pattern-matching.cpp.s
+.PHONY : src/kmp-pattern-matching.cpp.s
+
+src/linked-list-test.o: src/linked-list-test.cpp.o
+.PHONY : src/linked-list-test.o
+
+# target to build an object file
+src/linked-list-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/linked-list-test.cpp.o
+.PHONY : src/linked-list-test.cpp.o
+
+src/linked-list-test.i: src/linked-list-test.cpp.i
+.PHONY : src/linked-list-test.i
+
+# target to preprocess a source file
+src/linked-list-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/linked-list-test.cpp.i
+.PHONY : src/linked-list-test.cpp.i
+
+src/linked-list-test.s: src/linked-list-test.cpp.s
+.PHONY : src/linked-list-test.s
+
+# target to generate assembly for a file
+src/linked-list-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked-list-test.o.dir/build.make CMakeFiles/linked-list-test.o.dir/src/linked-list-test.cpp.s
+.PHONY : src/linked-list-test.cpp.s
 
 src/main-apps/avl-tree-test.o: src/main-apps/avl-tree-test.cpp.o
 .PHONY : src/main-apps/avl-tree-test.o
@@ -613,6 +900,54 @@ src/main-apps/strassen-matrix-mult.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strassen-matrix-mult.o.dir/build.make CMakeFiles/strassen-matrix-mult.o.dir/src/main-apps/strassen-matrix-mult.cpp.s
 .PHONY : src/main-apps/strassen-matrix-mult.cpp.s
 
+src/max-heap-test.o: src/max-heap-test.cpp.o
+.PHONY : src/max-heap-test.o
+
+# target to build an object file
+src/max-heap-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/max-heap-test.cpp.o
+.PHONY : src/max-heap-test.cpp.o
+
+src/max-heap-test.i: src/max-heap-test.cpp.i
+.PHONY : src/max-heap-test.i
+
+# target to preprocess a source file
+src/max-heap-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/max-heap-test.cpp.i
+.PHONY : src/max-heap-test.cpp.i
+
+src/max-heap-test.s: src/max-heap-test.cpp.s
+.PHONY : src/max-heap-test.s
+
+# target to generate assembly for a file
+src/max-heap-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/max-heap-test.o.dir/build.make CMakeFiles/max-heap-test.o.dir/src/max-heap-test.cpp.s
+.PHONY : src/max-heap-test.cpp.s
+
+src/min-heap-test.o: src/min-heap-test.cpp.o
+.PHONY : src/min-heap-test.o
+
+# target to build an object file
+src/min-heap-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/min-heap-test.cpp.o
+.PHONY : src/min-heap-test.cpp.o
+
+src/min-heap-test.i: src/min-heap-test.cpp.i
+.PHONY : src/min-heap-test.i
+
+# target to preprocess a source file
+src/min-heap-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/min-heap-test.cpp.i
+.PHONY : src/min-heap-test.cpp.i
+
+src/min-heap-test.s: src/min-heap-test.cpp.s
+.PHONY : src/min-heap-test.s
+
+# target to generate assembly for a file
+src/min-heap-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/min-heap-test.o.dir/build.make CMakeFiles/min-heap-test.o.dir/src/min-heap-test.cpp.s
+.PHONY : src/min-heap-test.cpp.s
+
 src/prefix-to-postfix.o: src/prefix-to-postfix.cpp.o
 .PHONY : src/prefix-to-postfix.o
 
@@ -636,6 +971,174 @@ src/prefix-to-postfix.s: src/prefix-to-postfix.cpp.s
 src/prefix-to-postfix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/prefix-to-postfix.o.dir/build.make CMakeFiles/prefix-to-postfix.o.dir/src/prefix-to-postfix.cpp.s
 .PHONY : src/prefix-to-postfix.cpp.s
+
+src/search-algorithms/binary-search.o: src/search-algorithms/binary-search.cpp.o
+.PHONY : src/search-algorithms/binary-search.o
+
+# target to build an object file
+src/search-algorithms/binary-search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-search.o.dir/build.make CMakeFiles/binary-search.o.dir/src/search-algorithms/binary-search.cpp.o
+.PHONY : src/search-algorithms/binary-search.cpp.o
+
+src/search-algorithms/binary-search.i: src/search-algorithms/binary-search.cpp.i
+.PHONY : src/search-algorithms/binary-search.i
+
+# target to preprocess a source file
+src/search-algorithms/binary-search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-search.o.dir/build.make CMakeFiles/binary-search.o.dir/src/search-algorithms/binary-search.cpp.i
+.PHONY : src/search-algorithms/binary-search.cpp.i
+
+src/search-algorithms/binary-search.s: src/search-algorithms/binary-search.cpp.s
+.PHONY : src/search-algorithms/binary-search.s
+
+# target to generate assembly for a file
+src/search-algorithms/binary-search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary-search.o.dir/build.make CMakeFiles/binary-search.o.dir/src/search-algorithms/binary-search.cpp.s
+.PHONY : src/search-algorithms/binary-search.cpp.s
+
+src/search-algorithms/linear-search.o: src/search-algorithms/linear-search.cpp.o
+.PHONY : src/search-algorithms/linear-search.o
+
+# target to build an object file
+src/search-algorithms/linear-search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear-search.o.dir/build.make CMakeFiles/linear-search.o.dir/src/search-algorithms/linear-search.cpp.o
+.PHONY : src/search-algorithms/linear-search.cpp.o
+
+src/search-algorithms/linear-search.i: src/search-algorithms/linear-search.cpp.i
+.PHONY : src/search-algorithms/linear-search.i
+
+# target to preprocess a source file
+src/search-algorithms/linear-search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear-search.o.dir/build.make CMakeFiles/linear-search.o.dir/src/search-algorithms/linear-search.cpp.i
+.PHONY : src/search-algorithms/linear-search.cpp.i
+
+src/search-algorithms/linear-search.s: src/search-algorithms/linear-search.cpp.s
+.PHONY : src/search-algorithms/linear-search.s
+
+# target to generate assembly for a file
+src/search-algorithms/linear-search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linear-search.o.dir/build.make CMakeFiles/linear-search.o.dir/src/search-algorithms/linear-search.cpp.s
+.PHONY : src/search-algorithms/linear-search.cpp.s
+
+src/search-algorithms/recursive-binary-search.o: src/search-algorithms/recursive-binary-search.cpp.o
+.PHONY : src/search-algorithms/recursive-binary-search.o
+
+# target to build an object file
+src/search-algorithms/recursive-binary-search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive-binary-search.o.dir/build.make CMakeFiles/recursive-binary-search.o.dir/src/search-algorithms/recursive-binary-search.cpp.o
+.PHONY : src/search-algorithms/recursive-binary-search.cpp.o
+
+src/search-algorithms/recursive-binary-search.i: src/search-algorithms/recursive-binary-search.cpp.i
+.PHONY : src/search-algorithms/recursive-binary-search.i
+
+# target to preprocess a source file
+src/search-algorithms/recursive-binary-search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive-binary-search.o.dir/build.make CMakeFiles/recursive-binary-search.o.dir/src/search-algorithms/recursive-binary-search.cpp.i
+.PHONY : src/search-algorithms/recursive-binary-search.cpp.i
+
+src/search-algorithms/recursive-binary-search.s: src/search-algorithms/recursive-binary-search.cpp.s
+.PHONY : src/search-algorithms/recursive-binary-search.s
+
+# target to generate assembly for a file
+src/search-algorithms/recursive-binary-search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursive-binary-search.o.dir/build.make CMakeFiles/recursive-binary-search.o.dir/src/search-algorithms/recursive-binary-search.cpp.s
+.PHONY : src/search-algorithms/recursive-binary-search.cpp.s
+
+src/sort-algorithms/bubble-sort.o: src/sort-algorithms/bubble-sort.cpp.o
+.PHONY : src/sort-algorithms/bubble-sort.o
+
+# target to build an object file
+src/sort-algorithms/bubble-sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble-sort.o.dir/build.make CMakeFiles/bubble-sort.o.dir/src/sort-algorithms/bubble-sort.cpp.o
+.PHONY : src/sort-algorithms/bubble-sort.cpp.o
+
+src/sort-algorithms/bubble-sort.i: src/sort-algorithms/bubble-sort.cpp.i
+.PHONY : src/sort-algorithms/bubble-sort.i
+
+# target to preprocess a source file
+src/sort-algorithms/bubble-sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble-sort.o.dir/build.make CMakeFiles/bubble-sort.o.dir/src/sort-algorithms/bubble-sort.cpp.i
+.PHONY : src/sort-algorithms/bubble-sort.cpp.i
+
+src/sort-algorithms/bubble-sort.s: src/sort-algorithms/bubble-sort.cpp.s
+.PHONY : src/sort-algorithms/bubble-sort.s
+
+# target to generate assembly for a file
+src/sort-algorithms/bubble-sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bubble-sort.o.dir/build.make CMakeFiles/bubble-sort.o.dir/src/sort-algorithms/bubble-sort.cpp.s
+.PHONY : src/sort-algorithms/bubble-sort.cpp.s
+
+src/sort-algorithms/merge-sort.o: src/sort-algorithms/merge-sort.cpp.o
+.PHONY : src/sort-algorithms/merge-sort.o
+
+# target to build an object file
+src/sort-algorithms/merge-sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/merge-sort.o.dir/build.make CMakeFiles/merge-sort.o.dir/src/sort-algorithms/merge-sort.cpp.o
+.PHONY : src/sort-algorithms/merge-sort.cpp.o
+
+src/sort-algorithms/merge-sort.i: src/sort-algorithms/merge-sort.cpp.i
+.PHONY : src/sort-algorithms/merge-sort.i
+
+# target to preprocess a source file
+src/sort-algorithms/merge-sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/merge-sort.o.dir/build.make CMakeFiles/merge-sort.o.dir/src/sort-algorithms/merge-sort.cpp.i
+.PHONY : src/sort-algorithms/merge-sort.cpp.i
+
+src/sort-algorithms/merge-sort.s: src/sort-algorithms/merge-sort.cpp.s
+.PHONY : src/sort-algorithms/merge-sort.s
+
+# target to generate assembly for a file
+src/sort-algorithms/merge-sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/merge-sort.o.dir/build.make CMakeFiles/merge-sort.o.dir/src/sort-algorithms/merge-sort.cpp.s
+.PHONY : src/sort-algorithms/merge-sort.cpp.s
+
+src/sort-algorithms/quick-sort.o: src/sort-algorithms/quick-sort.cpp.o
+.PHONY : src/sort-algorithms/quick-sort.o
+
+# target to build an object file
+src/sort-algorithms/quick-sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quick-sort.o.dir/build.make CMakeFiles/quick-sort.o.dir/src/sort-algorithms/quick-sort.cpp.o
+.PHONY : src/sort-algorithms/quick-sort.cpp.o
+
+src/sort-algorithms/quick-sort.i: src/sort-algorithms/quick-sort.cpp.i
+.PHONY : src/sort-algorithms/quick-sort.i
+
+# target to preprocess a source file
+src/sort-algorithms/quick-sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quick-sort.o.dir/build.make CMakeFiles/quick-sort.o.dir/src/sort-algorithms/quick-sort.cpp.i
+.PHONY : src/sort-algorithms/quick-sort.cpp.i
+
+src/sort-algorithms/quick-sort.s: src/sort-algorithms/quick-sort.cpp.s
+.PHONY : src/sort-algorithms/quick-sort.s
+
+# target to generate assembly for a file
+src/sort-algorithms/quick-sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quick-sort.o.dir/build.make CMakeFiles/quick-sort.o.dir/src/sort-algorithms/quick-sort.cpp.s
+.PHONY : src/sort-algorithms/quick-sort.cpp.s
+
+src/sort-algorithms/selection-sort.o: src/sort-algorithms/selection-sort.cpp.o
+.PHONY : src/sort-algorithms/selection-sort.o
+
+# target to build an object file
+src/sort-algorithms/selection-sort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selection-sort.o.dir/build.make CMakeFiles/selection-sort.o.dir/src/sort-algorithms/selection-sort.cpp.o
+.PHONY : src/sort-algorithms/selection-sort.cpp.o
+
+src/sort-algorithms/selection-sort.i: src/sort-algorithms/selection-sort.cpp.i
+.PHONY : src/sort-algorithms/selection-sort.i
+
+# target to preprocess a source file
+src/sort-algorithms/selection-sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selection-sort.o.dir/build.make CMakeFiles/selection-sort.o.dir/src/sort-algorithms/selection-sort.cpp.i
+.PHONY : src/sort-algorithms/selection-sort.cpp.i
+
+src/sort-algorithms/selection-sort.s: src/sort-algorithms/selection-sort.cpp.s
+.PHONY : src/sort-algorithms/selection-sort.s
+
+# target to generate assembly for a file
+src/sort-algorithms/selection-sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/selection-sort.o.dir/build.make CMakeFiles/selection-sort.o.dir/src/sort-algorithms/selection-sort.cpp.s
+.PHONY : src/sort-algorithms/selection-sort.cpp.s
 
 src/stack-sequence-validation.o: src/stack-sequence-validation.cpp.o
 .PHONY : src/stack-sequence-validation.o
@@ -670,14 +1173,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... avl-tree-test.o"
+	@echo "... binary-search.o"
 	@echo "... binary-tree-test.o"
+	@echo "... bubble-sort.o"
 	@echo "... calculator.o"
+	@echo "... cd-linked-list-test.o"
 	@echo "... check-expression-balance.o"
 	@echo "... decimal-number-calc.o"
 	@echo "... evaluate-infix.o"
-	@echo "... kmp_pattern_matching.o"
+	@echo "... kmp-pattern-matching.o"
+	@echo "... linear-search.o"
+	@echo "... linked-list-test.o"
 	@echo "... magic-square.o"
+	@echo "... max-heap-test.o"
+	@echo "... merge-sort.o"
+	@echo "... min-heap-test.o"
 	@echo "... prefix-to-postfix.o"
+	@echo "... quick-sort.o"
+	@echo "... recursive-binary-search.o"
+	@echo "... selection-sort.o"
 	@echo "... stack-sequence-validation.o"
 	@echo "... strassen-matrix-mult.o"
 	@echo "... src/AVLTree/AVLTree.o"
@@ -686,9 +1200,21 @@ help:
 	@echo "... src/BinaryTree/BinaryTree.o"
 	@echo "... src/BinaryTree/BinaryTree.i"
 	@echo "... src/BinaryTree/BinaryTree.s"
+	@echo "... src/CDLinkedList/CDLinkedList.o"
+	@echo "... src/CDLinkedList/CDLinkedList.i"
+	@echo "... src/CDLinkedList/CDLinkedList.s"
 	@echo "... src/DecimalNumber/DecimalNumber.o"
 	@echo "... src/DecimalNumber/DecimalNumber.i"
 	@echo "... src/DecimalNumber/DecimalNumber.s"
+	@echo "... src/Heap/MaxHeap.o"
+	@echo "... src/Heap/MaxHeap.i"
+	@echo "... src/Heap/MaxHeap.s"
+	@echo "... src/Heap/MinHeap.o"
+	@echo "... src/Heap/MinHeap.i"
+	@echo "... src/Heap/MinHeap.s"
+	@echo "... src/LinkedList/LinkedList.o"
+	@echo "... src/LinkedList/LinkedList.i"
+	@echo "... src/LinkedList/LinkedList.s"
 	@echo "... src/Queue/Queue.o"
 	@echo "... src/Queue/Queue.i"
 	@echo "... src/Queue/Queue.s"
@@ -698,6 +1224,9 @@ help:
 	@echo "... src/binary-tree-test.o"
 	@echo "... src/binary-tree-test.i"
 	@echo "... src/binary-tree-test.s"
+	@echo "... src/cd-linked-list-test.o"
+	@echo "... src/cd-linked-list-test.i"
+	@echo "... src/cd-linked-list-test.s"
 	@echo "... src/check-expression-balance.o"
 	@echo "... src/check-expression-balance.i"
 	@echo "... src/check-expression-balance.s"
@@ -707,9 +1236,12 @@ help:
 	@echo "... src/evaluate-infix.o"
 	@echo "... src/evaluate-infix.i"
 	@echo "... src/evaluate-infix.s"
-	@echo "... src/kmp_pattern_matching.o"
-	@echo "... src/kmp_pattern_matching.i"
-	@echo "... src/kmp_pattern_matching.s"
+	@echo "... src/kmp-pattern-matching.o"
+	@echo "... src/kmp-pattern-matching.i"
+	@echo "... src/kmp-pattern-matching.s"
+	@echo "... src/linked-list-test.o"
+	@echo "... src/linked-list-test.i"
+	@echo "... src/linked-list-test.s"
 	@echo "... src/main-apps/avl-tree-test.o"
 	@echo "... src/main-apps/avl-tree-test.i"
 	@echo "... src/main-apps/avl-tree-test.s"
@@ -722,9 +1254,36 @@ help:
 	@echo "... src/main-apps/strassen-matrix-mult.o"
 	@echo "... src/main-apps/strassen-matrix-mult.i"
 	@echo "... src/main-apps/strassen-matrix-mult.s"
+	@echo "... src/max-heap-test.o"
+	@echo "... src/max-heap-test.i"
+	@echo "... src/max-heap-test.s"
+	@echo "... src/min-heap-test.o"
+	@echo "... src/min-heap-test.i"
+	@echo "... src/min-heap-test.s"
 	@echo "... src/prefix-to-postfix.o"
 	@echo "... src/prefix-to-postfix.i"
 	@echo "... src/prefix-to-postfix.s"
+	@echo "... src/search-algorithms/binary-search.o"
+	@echo "... src/search-algorithms/binary-search.i"
+	@echo "... src/search-algorithms/binary-search.s"
+	@echo "... src/search-algorithms/linear-search.o"
+	@echo "... src/search-algorithms/linear-search.i"
+	@echo "... src/search-algorithms/linear-search.s"
+	@echo "... src/search-algorithms/recursive-binary-search.o"
+	@echo "... src/search-algorithms/recursive-binary-search.i"
+	@echo "... src/search-algorithms/recursive-binary-search.s"
+	@echo "... src/sort-algorithms/bubble-sort.o"
+	@echo "... src/sort-algorithms/bubble-sort.i"
+	@echo "... src/sort-algorithms/bubble-sort.s"
+	@echo "... src/sort-algorithms/merge-sort.o"
+	@echo "... src/sort-algorithms/merge-sort.i"
+	@echo "... src/sort-algorithms/merge-sort.s"
+	@echo "... src/sort-algorithms/quick-sort.o"
+	@echo "... src/sort-algorithms/quick-sort.i"
+	@echo "... src/sort-algorithms/quick-sort.s"
+	@echo "... src/sort-algorithms/selection-sort.o"
+	@echo "... src/sort-algorithms/selection-sort.i"
+	@echo "... src/sort-algorithms/selection-sort.s"
 	@echo "... src/stack-sequence-validation.o"
 	@echo "... src/stack-sequence-validation.i"
 	@echo "... src/stack-sequence-validation.s"
